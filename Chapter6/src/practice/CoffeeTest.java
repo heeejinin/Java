@@ -1,6 +1,6 @@
-package practice6;
+package practice;
 
-public class Practice6_1 {
+public class CoffeeTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -9,18 +9,17 @@ public class Practice6_1 {
 //		을 이용하여 위의 내용의 코드를 작성하세요.
 		
 		//객체 김씨
-		Guest kim = new Guest("kim",7000);
-		Guest lee = new Guest("lee",10000);
-		
-		Bean bean1 = new Bean(1);
-		lee.buyBean(bean1);
-		lee.showInfo();
-		bean1.showInfo();
-
-		Star star2 = new Star(2);
-		kim.buyStar(star2);
+		StarCafe sCafe = new StarCafe("서면점");
+		BeanCafe bCafe = new BeanCafe("서면점");
+		Customer kim = new Customer("김씨",10000);
+		Customer lee = new Customer("이씨",10000);
+		kim.takeStarCafe(sCafe, 4000);
 		kim.showInfo();
-		star2.showInfo();
+		sCafe.showInfo();
+		
+		lee.takeBeanCafe(bCafe, 4500);
+		lee.showInfo();
+		bCafe.showInfo();
 		
 	}
 

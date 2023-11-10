@@ -1,6 +1,6 @@
-package practice6;
+package practice;
 
-public class createCard {
+public class CardTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -8,14 +8,15 @@ public class createCard {
 //		기 실습과 같이 카드가 생설될 때 카드번호가 자동으로 증가할 수 있도록 카드 클래스를 만들
 //		고 생성해 보세요.
 		for(int i=0; i<100; i++) {
-			Card card  = new Card();
-//			card.showInfo();
-//		}
-//		CardCompany carCompany =CardCompany.getInstance();
-//		for(int i=0; i<200; i++) {
-//			Card card =cardCompany.createCard();
-//			card.showInfo();
+			Card card = new Card();
+			card.showInfo();
 		}
+		CardCompany cardCompany = CardCompany.getInstance();
+		for(int i=100; i<200; i++) {
+			Card card = cardCompany.createCard();
+			card.showInfo();
+		}
+		
 	}
 
 }
