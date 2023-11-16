@@ -19,9 +19,11 @@ public class ArrayListTest2 {
 		
 		for(int i=0; i<bookList.size(); i++) {
 			bookList.get(i).showInfo();
+			Book book= bookList.get(i);
+			book.showInfo();
 		}
 		System.out.println("===============향상된 for문(=foreach문)===============");
-		for(Book book : bookList) {
+		for(Book book : bookList) {//자료형 변수명 : 
 			book.showInfo();
 		}
 	}

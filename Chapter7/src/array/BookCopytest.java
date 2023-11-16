@@ -15,6 +15,7 @@ public class BookCopytest {
 		Book[] books2 =new Book[3];
 		for(int i=0; i<books1.length; i++) {
 			books2[i] = new Book(books1[i].getBookName(),books1[i].getAuthor());
+			
 		}
 		//얕은 복사 : 메모리 주소만 복사
 		//System.arraycopy(books1,0,books2,0,3);

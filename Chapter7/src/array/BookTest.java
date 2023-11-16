@@ -7,7 +7,9 @@ public class BookTest {
 		// TODO Auto-generated method stub
 		Book book1 = new Book();
 		book1.showInfo();
-
+		
+		System.out.println("=====================구분선=========================");
+		
 		// 객체 배열 선언 : 실제로 생성자를 불러서 인스턴스가 만들어지지 않음
 		Book[] books = new Book[5];
 		//반드시 직접적으로 new 생성자()를 실핼시켜야 객체 사용 가능
